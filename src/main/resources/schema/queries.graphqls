@@ -1,0 +1,9 @@
+type Query {
+    shows(title: String, lowestRating: Int, highestRating: Int, maxMaturityRating: ParentalGuidance): [Show]
+    showById(id: ID!): Show
+    allShows(page: Int, limit: Int): [Show]
+    showsByYear(releaseYear: Int): [Show]
+    showsByRating(minRating: Int, maxRating: Int): [Show]
+    showsByMaturityRating(maturityRating: ParentalGuidance): [Show]
+}
+

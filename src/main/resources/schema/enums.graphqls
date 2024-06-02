@@ -1,0 +1,7 @@
+enum ParentalGuidance {
+    G
+    PG
+    PG13
+    R
+    MA
+}
